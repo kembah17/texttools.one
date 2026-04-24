@@ -1,8 +1,17 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import CopyButton from '@/components/ui/CopyButton';
 import TextStats from '@/components/ui/TextStats';
+
+function escapeHtml(s: string): string {
+  return s
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
 
 export default function FindAndReplace() {
   const [input, setInput] = useState('');
@@ -38,7 +47,7 @@ export default function FindAndReplace() {
     }
   }, [input, find, useRegex, caseSensitive, globalMatch]);
 
-  const handleReplace = () => {
+  const handleReplace = useCallback(() => {
     setError('');
     if (!find) {
       setOutput(input);
@@ -77,23 +86,37 @@ export default function FindAndReplace() {
     } catch (e) {
       setError(`Invalid regex: ${e instanceof Error ? e.message : 'Unknown error'}`);
     }
-  };
+  }, [input, find, replace, useRegex, caseSensitive, globalMatch]);
 
   const highlightedHtml = useMemo(() => {
-    if (!find || !input) return input;
+    if (!find || !input) return escapeHtml(input);
     try {
       let regex: RegExp;
       if (useRegex) {
         const flags = 'g' + (caseSensitive ? '' : 'i');
-        regex = new RegExp(`(${find})`, flags);
+        regex = new RegExp(find, flags);
       } else {
         const escaped = find.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
         const flags = 'g' + (caseSensitive ? '' : 'i');
-        regex = new RegExp(`(${escaped})`, flags);
+        regex = new RegExp(escaped, flags);
       }
-      return input.replace(regex, '<mark class="bg-yellow-300 dark:bg-yellow-600 text-text-dark px-0.5 rounded">$1</mark>');
+      // Split by matches and escape each part to prevent XSS
+      const parts: string[] = [];
+      let lastIndex = 0;
+      let match: RegExpExecArray | null;
+      const re = new RegExp(regex.source, regex.flags);
+      while ((match = re.exec(input)) !== null) {
+        parts.push(escapeHtml(input.slice(lastIndex, match.index)));
+        parts.push('<mark class="bg-yellow-300 dark:bg-yellow-600 text-text-dark px-0.5 rounded">' + escapeHtml(match[0]) + '</mark>');
+        lastIndex = match.index + match[0].length;
+        if (match[0].length === 0) {
+          re.lastIndex++;
+        }
+      }
+      parts.push(escapeHtml(input.slice(lastIndex)));
+      return parts.join('');
     } catch {
-      return input;
+      return escapeHtml(input);
     }
   }, [input, find, useRegex, caseSensitive]);
 

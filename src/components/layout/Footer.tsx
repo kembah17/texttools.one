@@ -2,14 +2,14 @@ import Link from 'next/link';
 import AdSlot from '@/components/ui/AdSlot';
 
 const tools = [
-  { name: 'Case Converter', href: '/case-converter' },
-  { name: 'Text Diff', href: '/text-diff' },
-  { name: 'Remove Duplicates', href: '/remove-duplicates' },
-  { name: 'Lorem Ipsum Generator', href: '/lorem-ipsum-generator' },
-  { name: 'Text Reverser', href: '/text-reverser' },
-  { name: 'Text Sorter', href: '/text-sorter' },
-  { name: 'Find & Replace', href: '/find-and-replace' },
-  { name: 'Whitespace Remover', href: '/whitespace-remover' },
+  { name: 'Case Converter', href: '/case-converter', icon: '🔄' },
+  { name: 'Text Diff', href: '/text-diff', icon: '📊' },
+  { name: 'Remove Duplicates', href: '/remove-duplicates', icon: '🧹' },
+  { name: 'Lorem Ipsum Generator', href: '/lorem-ipsum-generator', icon: '📝' },
+  { name: 'Text Reverser', href: '/text-reverser', icon: '↩️' },
+  { name: 'Text Sorter', href: '/text-sorter', icon: '📋' },
+  { name: 'Find & Replace', href: '/find-and-replace', icon: '🔍' },
+  { name: 'Whitespace Remover', href: '/whitespace-remover', icon: '✂️' },
 ];
 
 export default function Footer() {
@@ -30,7 +30,7 @@ export default function Footer() {
               {tools.map(tool => (
                 <li key={tool.href}>
                   <Link href={tool.href} className="text-sm transition-colors" style={{ color: 'var(--color-footer-muted)' }}>
-                    {tool.name}
+                    {tool.icon} {tool.name}
                   </Link>
                 </li>
               ))}

@@ -45,7 +45,7 @@ export default function Header() {
             <rect width="36" height="36" rx="8" fill="var(--color-primary)"/>
             <text x="18" y="24" textAnchor="middle" fill="white" fontSize="18" fontWeight="700" fontFamily="system-ui">Tt</text>
           </svg>
-          <span style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--color-text-heading)' }}>texttools<span style={{ color: 'var(--color-primary)' }}>.one</span></span>
+          <span style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--color-text-heading)' }}>texttools<span style={{ color: 'var(--color-text-heading)' }}>.one</span></span>
         </Link>
 
         <div className="flex items-center gap-3">

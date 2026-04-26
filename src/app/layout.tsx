@@ -11,21 +11,21 @@ export const metadata: Metadata = {
   ...(gscVerification && { verification: { google: gscVerification } }),
   metadataBase: new URL('https://texttools.one'),
   title: {
-    default: 'TextTools.one — Free Online Text Manipulation Tools',
-    template: '%s | TextTools.one',
+    default: 'texttools.one — Free Online Text Manipulation Tools',
+    template: '%s | texttools.one',
   },
   description: 'Free online text tools: case converter, text diff, duplicate remover, lorem ipsum generator, text reverser, sorter, find & replace, and whitespace remover. 100% client-side processing.',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://texttools.one',
-    siteName: 'TextTools.one',
-    title: 'TextTools.one — Free Online Text Manipulation Tools',
+    siteName: 'texttools.one',
+    title: 'texttools.one — Free Online Text Manipulation Tools',
     description: 'Free online text tools: case converter, text diff, duplicate remover, lorem ipsum generator, and more. Privacy-first — all processing happens in your browser.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'TextTools.one — Free Online Text Manipulation Tools',
+    title: 'texttools.one — Free Online Text Manipulation Tools',
     description: 'Free online text tools. Privacy-first — all processing happens in your browser.',
   },
   robots: {

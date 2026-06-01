@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     siteName: 'texttools.one',
     title: 'texttools.one — Free Online Text Manipulation Tools',
     description: 'Free online text tools: case converter, text diff, duplicate remover, lorem ipsum generator, and more. Privacy-first — all processing happens in your browser.',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Text Tools' }],
   },
   twitter: {
     card: 'summary_large_image',

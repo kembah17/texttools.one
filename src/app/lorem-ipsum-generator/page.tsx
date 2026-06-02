@@ -8,11 +8,11 @@ import RelatedTools from '@/components/ui/RelatedTools';
 export const metadata: Metadata = {
   title: 'Lorem Ipsum Generator — Generate Placeholder Text Free',
   description: 'Generate lorem ipsum placeholder text — paragraphs, sentences, or words. Free online lorem ipsum generator for designers and developers.',
-  alternates: { canonical: 'https://texttools.one/lorem-ipsum-generator' },
+  alternates: { canonical: 'https://www.texttools.one/lorem-ipsum-generator' },
   openGraph: {
     title: 'Lorem Ipsum Generator — Generate Placeholder Text Free',
     description: 'Generate paragraphs, sentences, or words of lorem ipsum placeholder text instantly.',
-    url: 'https://texttools.one/lorem-ipsum-generator',
+    url: 'https://www.texttools.one/lorem-ipsum-generator',
   },
 };
 

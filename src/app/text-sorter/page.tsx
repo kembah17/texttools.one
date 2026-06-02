@@ -8,11 +8,11 @@ import RelatedTools from '@/components/ui/RelatedTools';
 export const metadata: Metadata = {
   title: 'Text Sorter — Sort Lines Alphabetically Online Free',
   description: 'Sort text lines alphabetically (A-Z, Z-A), by length, numerically, or shuffle randomly. Free online text sorting tool.',
-  alternates: { canonical: 'https://texttools.one/text-sorter' },
+  alternates: { canonical: 'https://www.texttools.one/text-sorter' },
   openGraph: {
     title: 'Text Sorter — Sort Lines Alphabetically Online Free',
     description: 'Sort text lines alphabetically, by length, numerically, or randomly. Free and private.',
-    url: 'https://texttools.one/text-sorter',
+    url: 'https://www.texttools.one/text-sorter',
   },
 };
 

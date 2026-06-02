@@ -8,11 +8,11 @@ import RelatedTools from '@/components/ui/RelatedTools';
 export const metadata: Metadata = {
   title: 'Find and Replace — Search & Replace Text Online Free',
   description: 'Find and replace text with regex support, case sensitivity toggle, and match highlighting. Free online find and replace tool.',
-  alternates: { canonical: 'https://texttools.one/find-and-replace' },
+  alternates: { canonical: 'https://www.texttools.one/find-and-replace' },
   openGraph: {
     title: 'Find and Replace — Search & Replace Text Online Free',
     description: 'Find and replace text with regex support and live match highlighting. Free and private.',
-    url: 'https://texttools.one/find-and-replace',
+    url: 'https://www.texttools.one/find-and-replace',
   },
 };
 

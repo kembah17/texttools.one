@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://texttools.one',
+  siteUrl: 'https://www.texttools.one',
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   outDir: './out',

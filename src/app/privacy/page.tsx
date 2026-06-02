@@ -3,11 +3,11 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Privacy Policy — TextTools.one',
   description: 'Privacy policy for TextTools.one. Learn how we protect your data — all text processing happens in your browser with no server uploads.',
-  alternates: { canonical: 'https://texttools.one/privacy' },
+  alternates: { canonical: 'https://www.texttools.one/privacy' },
   openGraph: {
     title: 'Privacy Policy — TextTools.one',
     description: 'Our privacy policy explains how TextTools.one protects your data with client-side processing.',
-    url: 'https://texttools.one/privacy',
+    url: 'https://www.texttools.one/privacy',
   },
 };
 

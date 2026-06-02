@@ -8,11 +8,11 @@ import RelatedTools from '@/components/ui/RelatedTools';
 export const metadata: Metadata = {
   title: 'Whitespace Remover — Clean Up Spaces & Blank Lines Free',
   description: 'Remove extra spaces, trim lines, remove blank lines, convert tabs to spaces, and clean up whitespace. Free online whitespace remover tool.',
-  alternates: { canonical: 'https://texttools.one/whitespace-remover' },
+  alternates: { canonical: 'https://www.texttools.one/whitespace-remover' },
   openGraph: {
     title: 'Whitespace Remover — Clean Up Spaces & Blank Lines Free',
     description: 'Clean up extra whitespace, trim lines, and remove blank lines instantly. Free and private.',
-    url: 'https://texttools.one/whitespace-remover',
+    url: 'https://www.texttools.one/whitespace-remover',
   },
 };
 

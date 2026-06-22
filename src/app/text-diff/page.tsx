@@ -8,11 +8,11 @@ import RelatedTools from '@/components/ui/RelatedTools';
 export const metadata: Metadata = {
   title: 'Text Diff — Compare Two Texts Online Free',
   description: 'Compare two texts side-by-side and highlight additions, deletions, and changes. Free online text diff and comparison tool.',
-  alternates: { canonical: 'https://www.texttools.one/text-diff' },
+  alternates: { canonical: 'https://texttools.one/text-diff' },
   openGraph: {
     title: 'Text Diff — Compare Two Texts Online Free',
     description: 'Compare two texts side-by-side with color-coded differences. Free, private, no sign-up required.',
-    url: 'https://www.texttools.one/text-diff',
+    url: 'https://texttools.one/text-diff',
   },
 };
 

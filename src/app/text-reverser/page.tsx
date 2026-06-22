@@ -8,11 +8,11 @@ import RelatedTools from '@/components/ui/RelatedTools';
 export const metadata: Metadata = {
   title: 'Text Reverser — Reverse Text, Words & Lines Online Free',
   description: 'Reverse text by characters, words, or lines instantly. Free online text reverser tool — no sign-up, no data collection.',
-  alternates: { canonical: 'https://www.texttools.one/text-reverser' },
+  alternates: { canonical: 'https://texttools.one/text-reverser' },
   openGraph: {
     title: 'Text Reverser — Reverse Text, Words & Lines Online Free',
     description: 'Reverse text by characters, words, or lines instantly. Free and private.',
-    url: 'https://www.texttools.one/text-reverser',
+    url: 'https://texttools.one/text-reverser',
   },
 };
 

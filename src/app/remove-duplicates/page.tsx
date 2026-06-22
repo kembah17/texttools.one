@@ -8,11 +8,11 @@ import RelatedTools from '@/components/ui/RelatedTools';
 export const metadata: Metadata = {
   title: 'Remove Duplicate Lines — Deduplicate Text Online Free',
   description: 'Remove duplicate lines from text with options for case-sensitive or case-insensitive matching and whitespace trimming. Free online tool.',
-  alternates: { canonical: 'https://www.texttools.one/remove-duplicates' },
+  alternates: { canonical: 'https://texttools.one/remove-duplicates' },
   openGraph: {
     title: 'Remove Duplicate Lines — Deduplicate Text Online Free',
     description: 'Remove duplicate lines from your text instantly. Case-sensitive or insensitive matching with whitespace trimming.',
-    url: 'https://www.texttools.one/remove-duplicates',
+    url: 'https://texttools.one/remove-duplicates',
   },
 };
 

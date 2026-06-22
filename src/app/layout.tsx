@@ -9,7 +9,7 @@ const gscVerification = process.env.NEXT_PUBLIC_GSC_VERIFICATION;
 
 export const metadata: Metadata = {
   ...(gscVerification && { verification: { google: gscVerification } }),
-  metadataBase: new URL('https://www.texttools.one'),
+  metadataBase: new URL('https://texttools.one'),
   title: {
     default: 'texttools.one — Free Online Text Manipulation Tools',
     template: '%s | texttools.one',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://www.texttools.one',
+    url: 'https://texttools.one',
     siteName: 'texttools.one',
     title: 'texttools.one — Free Online Text Manipulation Tools',
     description: 'Free online text tools: case converter, text diff, duplicate remover, lorem ipsum generator, and more. Privacy-first — all processing happens in your browser.',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: 'https://www.texttools.one',
+    canonical: 'https://texttools.one',
   },
 };
 

@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.texttools.one
+Host: https://texttools.one
 
 # Sitemaps
-Sitemap: https://www.texttools.one/sitemap.xml
+Sitemap: https://texttools.one/sitemap.xml

@@ -8,11 +8,11 @@ import RelatedTools from '@/components/ui/RelatedTools';
 export const metadata: Metadata = {
   title: 'Case Converter — Change Text Case Online Free',
   description: 'Convert text to uppercase, lowercase, title case, sentence case, camelCase, snake_case, kebab-case, and more. Free online case converter tool.',
-  alternates: { canonical: 'https://www.texttools.one/case-converter' },
+  alternates: { canonical: 'https://texttools.one/case-converter' },
   openGraph: {
     title: 'Case Converter — Change Text Case Online Free',
     description: 'Convert text between 10 different case formats instantly. Free, private, no sign-up required.',
-    url: 'https://www.texttools.one/case-converter',
+    url: 'https://texttools.one/case-converter',
   },
 };
 
